@@ -14,7 +14,7 @@ This project focuses on building the foundational UI for the Lyfe Platform, star
 1. Setup UI project structure.  
 2. Build Life Meters UI components.  
 
-'''
+```
 lyfe-platform/
     ├── src/                   # UI Source Code
     │   ├── components/        # Reusable components (e.g., Meter, Buttons)
@@ -26,4 +26,4 @@ lyfe-platform/
     │   └── index.js           # Entry point for the app
     ├── README.md              # Project documentation
     └── archive/               # Placeholder for earlier infrastructure work
-'''
+```
