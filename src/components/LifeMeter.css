@@ -1,0 +1,85 @@
+/* Container for all meters */
+.life-meter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds spacing between rows */
+    padding: 20px;
+    background-color: #FFF;
+}
+
+/* Individual row: Buttons and meter */
+.life-meter-row {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Spacing between buttons and meter */
+}
+
+/* Container for buttons (grouping + and - together) */
+.button-group {
+    display: flex;
+    flex-direction: column; /* Ensures + is on top and - is below */
+    gap: 8px; /* Space between buttons */
+}
+
+/* Details container for the meter title and bar */
+.life-meter-details {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Allows the meter to take up remaining space */
+    gap: 5px;
+}
+
+/* Meter title styling */
+.life-meter-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333; /* Dark grey for readability */
+}
+
+/* Meter bar */
+.life-meter-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #D9D9D9; /* Light grey for unfilled meter */
+    border-radius: 10px;
+    overflow: hidden; /* Keeps the fill bar inside rounded corners */
+    position: relative;
+}
+
+
+/* Meter fill */
+.life-meter-fill {
+    height: 100%;
+    transition: width 0.3s ease-in-out; /* Smooth fill animation */
+    border-radius: 10px; /* Ensures smooth rounded corners */
+  }
+
+/* Circular buttons */
+.life-meter-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Makes the button circular */
+    border: 2px solid #D9D9D9;
+    background-color: #FFF;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.life-meter-button:hover {
+    background-color: #F1F1F1; /* Slightly darker on hover */
+    border-color: #B0B0B0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.life-meter-button:active {
+    background-color: #E0E0E0; /* Even darker when clicked */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
